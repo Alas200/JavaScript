@@ -15,3 +15,7 @@ console.log(typeof []); // Output: "object"
 console.log(typeof function() {}); // Output: "function"
 console.log(typeof Symbol('sym')); // Output: "symbol"  
 console.log(typeof BigInt(12345678901234567890)); // Output: "bigint"
+
+
+
+
