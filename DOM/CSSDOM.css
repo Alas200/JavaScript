@@ -1,0 +1,78 @@
+/* 1. Estilos generales para toda la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5; /* Un fondo gris claro muy suave */
+    color: #333333;             /* Color del texto principal */
+    margin: 0;
+    padding: 40px;             /* Despega el contenido de los bordes de la pantalla */
+    display: flex;
+    flex-direction: column;
+    align-items: center;       /* Centra todo el contenido en la pantalla */
+}
+
+/* 2. Estilos para el título principal */
+h1 {
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+/* 3. Estilos para el formulario (el input y el botón juntos) */
+#formulario {
+    background-color: #ffffff; /* Fondo blanco para el bloque del formulario */
+    padding: 20px;
+    border-radius: 8px;        /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Una sombra suave para darle volumen */
+    display: flex;
+    gap: 10px;                 /* Separa el input del botón por 10 píxeles */
+    width: 100%;
+    max-width: 500px;          /* Evita que se haga gigante en pantallas grandes */
+}
+
+/* 4. Estilos para la caja de texto (input) */
+#cajaTexto {
+    flex-grow: 1;              /* Hace que el input ocupe todo el espacio disponible */
+    padding: 10px;
+    border: 1px solid #ccc;    /* Un borde gris claro */
+    border-radius: 4px;        /* Bordes ligeramente redondeados */
+    font-size: 14px;
+}
+
+/* Evita que el borde se vea feo al hacer clic para escribir */
+#cajaTexto:focus {
+    outline: none;
+    border-color: #007bff;     /* El borde se vuelve azul al hacer clic */
+}
+
+/* 5. Estilos para el botón de agregar */
+#formulario button {
+    background-color: #007bff; /* Color azul moderno */
+    color: white;              /* Texto blanco */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;           /* Hace que el cursor cambie a una "mano" al pasar por encima */
+    font-weight: bold;
+}
+
+/* Efecto cuando el usuario pasa el ratón por encima del botón */
+#formulario button:hover {
+    background-color: #0056b3; /* Un azul un poco más oscuro */
+}
+
+/* 6. Estilos para la lista donde aparecen los comentarios */
+#listaComentarios {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;          /* Separa la lista del formulario */
+}
+
+/* 7. Estilos para cada comentario individual que creas con JavaScript */
+#listaComentarios p {
+    background-color: #ffffff;
+    padding: 15px;
+    border-left: 5px solid #007bff; /* Una bonita barra azul al lado izquierdo del comentario */
+    border-radius: 0 4px 4px 0;    /* Redondea solo las esquinas de la derecha */
+    margin-bottom: 10px;           /* Separa un comentario de otro */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    word-wrap: break-word;         /* Evita que un texto larguísimo rompa el diseño */
+}
