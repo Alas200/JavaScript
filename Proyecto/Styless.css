@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fa;
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-principal {
+    width: 100%;
+    max-width: 550px;
+}
+
+h1 {
+    color: #333;
+}
+
+#formulario {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#cajaTexto {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+#formulario button {
+    background-color: #28a745; /* Verde para agregar */
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#formulario button:hover {
+    background-color: #218838;
+}
+
+/* Tarjeta contenedora de cada comentario */
+.comentario-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative; /* Nos ayuda a posicionar el botón de eliminar */
+}
+
+.texto-contenido {
+    margin: 0;
+    font-size: 15px;
+    color: #222;
+    padding-right: 80px; /* Evita que el texto choque con el botón de borrar */
+}
+
+.texto-fecha {
+    font-size: 11px;
+    color: #777;
+    font-style: italic;
+}
+
+/* Botón de eliminar en la esquina del comentario */
+.btn-eliminar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #dc3545; /* Rojo de advertencia */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.btn-eliminar:hover {
+    background-color: #c82333;
+}
