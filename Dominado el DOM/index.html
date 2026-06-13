@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Contraseñas</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+
+    <main class="contenedor-principal">
+        <h1 class="titulo-app">Password Generator</h1>
+
+        <div class="pantalla-password">
+            <input type="text" id="resultado-password" value="PTx1f5DaFX" readonly>
+            <button id="btn-copiar" title="Copiar contraseña">📋</button>
+        </div>
+
+        <form id="formulario-generador" class="tarjeta-opciones">
+            
+            <div class="control-longitud">
+                <div class="texto-longitud">
+                    <span class="etiqueta">Character Length</span>
+                    <span id="valor-longitud" class="numero-verde">10</span>
+                </div>
+                <input type="range" id="slider-longitud" min="8" max="20" value="10">
+            </div>
+
+            <div class="grupo-checkboxes">
+                <label class="opcion-check">
+                    <input type="checkbox" id="check-mayusculas" checked>
+                    Include Uppercase Letters
+                </label>
+                
+                <label class="opcion-check">
+                    <input type="checkbox" id="check-minusculas" checked>
+                    Include Lowercase Letters
+                </label>
+                
+                <label class="opcion-check">
+                    <input type="checkbox" id="check-numeros" checked>
+                    Include Numbers
+                </label>
+                
+                <label class="opcion-check">
+                    <input type="checkbox" id="check-simbolos">
+                    Include Symbols
+                </label>
+            </div>
+
+            <div class="indicador-fuerza">
+                <span class="texto-fuerza">STRENGTH</span>
+                <div class="resultado-fuerza">
+                    <span id="texto-nivel">MEDIUM</span>
+                    <div class="barras-fuerza">
+                        <div class="barra activa"></div>
+                        <div class="barra activa"></div>
+                        <div class="barra activa"></div>
+                        <div class="barra"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" id="btn-generar">
+                GENERATE →
+            </button>
+
+        </form>
+    </main>
+
+    <script src="Scrpit.js"></script>
+</body>
+</html>

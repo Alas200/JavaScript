@@ -1,0 +1,172 @@
+/* Configuración general de la pantalla oscura */
+body {
+    background-color: #08070b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #e6e6e8;
+}
+
+/* Contenedor que centra la aplicación */
+.contenedor-principal {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.titulo-app {
+    color: #817d92;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Bloque superior donde se ve la contraseña generada */
+.pantalla-password {
+    background-color: #24232c;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+#resultado-password {
+    background: none;
+    border: none;
+    color: #e6e6e8;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: monospace;
+    width: 80%;
+    outline: none;
+}
+
+#btn-copiar {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+#btn-copiar:hover {
+    transform: scale(1.2); /* Crece un poquito al pasar el ratón */
+}
+
+/* Tarjeta grande inferior con los controles */
+.tarjeta-opciones {
+    background-color: #24232c;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.texto-longitud {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.numero-verde {
+    color: #a4ffaf; /* El verde neón de la foto */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Control deslizable */
+#slider-longitud {
+    width: 100%;
+    margin-bottom: 25px;
+    accent-color: #a4ffaf; /* Pinta el círculo del deslizador de verde */
+}
+
+/* Caja de opciones con checkboxes */
+.grupo-checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.opcion-check {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.opcion-check input {
+    accent-color: #a4ffaf; /* Pinta la palomita del checkbox de verde */
+    width: 18px;
+    height: 18px;
+}
+
+/* Recuadro visual de fuerza (Strength) */
+.indicador-fuerza {
+    background-color: #14131b;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+.texto-fuerza {
+    color: #817d92;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.resultado-fuerza {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#texto-nivel {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.barras-fuerza {
+    display: flex;
+    gap: 4px;
+}
+
+.barra {
+    width: 8px;
+    height: 20px;
+    border: 2px solid #e6e6e8;
+}
+
+/* Clase especial que usaremos para pintar los rectángulos de verde */
+.barra.activa {
+    background-color: #a4ffaf;
+    border-color: #a4ffaf;
+}
+
+/* Botón principal GENERATE */
+#btn-generar {
+    width: 100%;
+    background-color: #a4ffaf;
+    color: #24232c;
+    border: none;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#btn-generar:hover {
+    background-color: transparent;
+    color: #a4ffaf;
+    outline: 2px solid #a4ffaf;
+}
